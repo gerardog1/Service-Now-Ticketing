@@ -4,7 +4,7 @@
 
 ### 1. Creating & Prioritizing the Ticket
 * Opened a new incident under **Network > VPN** and routed it to the **Service Desk** group.
-* Since this only affected one remote user rather than the whole office, I set **Impact** to `2 - Medium` and **Urgency** to `2 - Medium`. ServiceNow automatically calculated the priority as **3 - Moderate**, and I added a quick work note explaining why.
+* Since this only affected one remote user rather than the whole office, I set **Impact** to `2 - Medium` and **Urgency** to `2 - Medium`. ServiceNow automatically calculated the priority as **3 - Moderate**.
 
 
 ### 2. Fixing Assignment Permissions & Claiming the Ticket

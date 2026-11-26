@@ -23,7 +23,7 @@
 * Once the connection worked, I changed the ticket state to **Resolved**, selected **Solution provided** as the resolution code, and wrote a brief summary of what fixed the issue.
 
 ## Screenshots
-[See Screenshots Here](..screenshots/01-screenshots.md)
+[See Screenshots Here](../screenshots/01-screenshots.md)
 
 ## Key Takeaways
 

@@ -9,7 +9,7 @@
 
 ### 2. Fixing Assignment Permissions & Claiming the Ticket
 * When I tried to assign the ticket to my own account (`System Administrator`), my name wouldn't show up in the **Assigned to** search list.
-* To fix this, I added `System Administrator` to the **Service Desk** group members list and assigned the `itil` role to my user profile so ServiceNow would recognize me as an active support technician.
+* To fix this, I searched `sys_user.list` to find `System Administrator` and add the account to the **Service Desk** group members list and assigned the `itil` role to it as well so ServiceNow would recognize me as an active support technician.
 * After refreshing the form, I assigned the ticket to myself and changed the state to **In Progress**.
 
 
@@ -28,6 +28,6 @@
 ## Key Takeaways
 
 * **How ServiceNow Calculates Priority:** Before doing this lab, I thought techs just manually picked whether a ticket was "High" or "Low." Seeing how **Impact** (how many people are affected) and **Urgency** (how fast it needs to be fixed) automatically determine the **Priority** made a lot of sense.
-* **Permissions Behind the Scenes:** Getting stuck when my own account wouldn't show up under **Assigned to** taught me how ServiceNow controls access. Even as an admin, a user needs to be added to the right **Assignment Group** and have the **`itil` role** before they can actually work tickets.
+* **Permissions Behind the Scenes:** Getting stuck when my own account wouldn't show up under **Assigned to** taught me how ServiceNow controls access and how to use `sys_user.list`. Even as an admin, a user needs to be added to the right **Assignment Group** and have the **`itil` role** before they can actually work tickets.
 * **Two Different Ways to Document:** Learning the difference between **Work Notes** (yellow, for other IT techs to see what I checked) and **Additional Comments** (white, for talking to the user without confusing tech jargon) is a habit I'll definitely use in a real help desk role.
 * **Why Clean Resolution Notes Matter:** Writing down the actual fix at the end instead of just clicking "Resolved" helps the next tech who runs into the same VPN issue solve it faster.
